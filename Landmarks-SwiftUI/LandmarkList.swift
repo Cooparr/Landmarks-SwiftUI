@@ -13,7 +13,7 @@ struct LandmarkList : View {
         NavigationView {
             
             List(landmarkData) { thisLandmark in
-                NavigationButton(destination: LandmarkDetail()) {
+                NavigationButton(destination: LandmarkDetail(landmark: thisLandmark)) {
                     LandmarkRow(landmark: thisLandmark)
                 }
             }
