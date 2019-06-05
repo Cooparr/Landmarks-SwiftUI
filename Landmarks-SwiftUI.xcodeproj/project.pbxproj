@@ -136,6 +136,7 @@
 				1E4D28F322A801B5001FBB25 /* AppDelegate.swift */,
 				1E4D28F522A801B5001FBB25 /* SceneDelegate.swift */,
 				1E4D28F722A801B5001FBB25 /* LandmarkDetail.swift */,
+				1E8CEEDD22A81B25002C2DB1 /* LandmarkRow.swift */,
 				1EDCD9B822A81337003DE13F /* Supporting Views */,
 				1E11C49822A816DA004764E9 /* Resources */,
 				1E4D28F922A801B7001FBB25 /* Assets.xcassets */,
@@ -159,7 +160,6 @@
 			children = (
 				1EDCD9B422A808E8003DE13F /* CircleImage.swift */,
 				1EDCD9B622A80A4D003DE13F /* MapView.swift */,
-				1E8CEEDD22A81B25002C2DB1 /* LandmarkRow.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
