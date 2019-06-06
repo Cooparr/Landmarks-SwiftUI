@@ -38,6 +38,7 @@
 		1EDCD9B522A808E8003DE13F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDCD9B422A808E8003DE13F /* CircleImage.swift */; };
 		1EDCD9B722A80A4D003DE13F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDCD9B622A80A4D003DE13F /* MapView.swift */; };
 		1EDF516C22A969BB00AC965F /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF516B22A969BB00AC965F /* BadgeSymbol.swift */; };
+		1EDF516E22A96B1900AC965F /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF516D22A96B1900AC965F /* RotatedBadgeSymbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		1EDCD9B422A808E8003DE13F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		1EDCD9B622A80A4D003DE13F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		1EDF516B22A969BB00AC965F /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
+		1EDF516D22A96B1900AC965F /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				1E1FA82F22A9622500F15BA2 /* Badge.swift */,
 				1E1FA83222A968C500F15BA2 /* BadgeBackground.swift */,
 				1EDF516B22A969BB00AC965F /* BadgeSymbol.swift */,
+				1EDF516D22A96B1900AC965F /* RotatedBadgeSymbol.swift */,
 			);
 			path = Badge;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				1E1FA82E22A9607F00F15BA2 /* HexagonParameters.swift in Sources */,
 				1E5193C622A82F68003A9A34 /* LandmarkList.swift in Sources */,
 				1EDF516C22A969BB00AC965F /* BadgeSymbol.swift in Sources */,
+				1EDF516E22A96B1900AC965F /* RotatedBadgeSymbol.swift in Sources */,
 				1EDCD9B722A80A4D003DE13F /* MapView.swift in Sources */,
 				1E1FA83322A968C500F15BA2 /* BadgeBackground.swift in Sources */,
 				1E4D28F622A801B5001FBB25 /* SceneDelegate.swift in Sources */,
