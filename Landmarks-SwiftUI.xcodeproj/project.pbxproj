@@ -92,6 +92,7 @@
 			children = (
 				1E11C44822A81562004764E9 /* Data.swift */,
 				1E11C44A22A8157D004764E9 /* Landmark.swift */,
+				1E767E7022A941D400C54281 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,7 +149,6 @@
 				1E4D28FE22A801B7001FBB25 /* LaunchScreen.storyboard */,
 				1E4D290122A801B7001FBB25 /* Info.plist */,
 				1E4D28FB22A801B7001FBB25 /* Preview Content */,
-				1E767E7022A941D400C54281 /* UserData.swift */,
 			);
 			path = "Landmarks-SwiftUI";
 			sourceTree = "<group>";
