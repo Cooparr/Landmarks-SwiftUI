@@ -15,8 +15,14 @@ struct LandmarkRow : View {
     var body: some View {
         HStack {
             landmark.image(forSize: 50)
-            Text(landmark.name)
-//            Spacer()
+            Text(verbatim: landmark.name)
+            Spacer()
+            
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .imageScale(.medium)
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
