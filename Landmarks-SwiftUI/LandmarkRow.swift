@@ -16,7 +16,7 @@ struct LandmarkRow : View {
         HStack {
             landmark.image(forSize: 50)
             Text(landmark.name)
-            Spacer()
+//            Spacer()
         }
     }
 }

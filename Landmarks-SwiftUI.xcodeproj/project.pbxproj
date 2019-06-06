@@ -97,12 +97,12 @@
 		1E11C49822A816DA004764E9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E11C4A122A817B7004764E9 /* landmarkData.json */,
 				1E11C49E22A817B6004764E9 /* chilkoottrail.jpg */,
 				1E11C4A522A817B7004764E9 /* chincoteague.jpg */,
 				1E11C49D22A817B6004764E9 /* hiddenlake.jpg */,
 				1E11C49922A817B6004764E9 /* icybay.jpg */,
 				1E11C4A322A817B7004764E9 /* lakemcdonald.jpg */,
-				1E11C4A122A817B7004764E9 /* landmarkData.json */,
 				1E11C49F22A817B7004764E9 /* rainbowlake.jpg */,
 				1E11C49C22A817B6004764E9 /* silversalmoncreek.jpg */,
 				1E11C4A022A817B7004764E9 /* stmarylake.jpg */,
@@ -137,9 +137,9 @@
 				1E11C45322A81631004764E9 /* Models */,
 				1E4D28F322A801B5001FBB25 /* AppDelegate.swift */,
 				1E4D28F522A801B5001FBB25 /* SceneDelegate.swift */,
-				1E4D28F722A801B5001FBB25 /* LandmarkDetail.swift */,
-				1E8CEEDD22A81B25002C2DB1 /* LandmarkRow.swift */,
 				1E5193C522A82F68003A9A34 /* LandmarkList.swift */,
+				1E8CEEDD22A81B25002C2DB1 /* LandmarkRow.swift */,
+				1E4D28F722A801B5001FBB25 /* LandmarkDetail.swift */,
 				1EDCD9B822A81337003DE13F /* Supporting Views */,
 				1E11C49822A816DA004764E9 /* Resources */,
 				1E4D28F922A801B7001FBB25 /* Assets.xcassets */,
