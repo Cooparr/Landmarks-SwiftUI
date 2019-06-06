@@ -9,15 +9,13 @@
 import SwiftUI
 import MapKit
 
-// makeUIView & updateUIView are required function to conform with UIViewRepresentable
-struct MapView : UIViewRepresentable {
-    
+struct MapView: UIViewRepresentable {
     var coordinate: CLLocationCoordinate2D
     
     func makeUIView(context: Context) -> MKMapView {
-        return MKMapView(frame: .zero)
+        MKMapView(frame: .zero)
     }
-   
+    
     func updateUIView(_ view: MKMapView, context: Context) {
         let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
         let region = MKCoordinateRegion(center: coordinate, span: span)
@@ -26,7 +24,7 @@ struct MapView : UIViewRepresentable {
 }
 
 #if DEBUG
-struct MapView_Previews : PreviewProvider {
+struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView(coordinate: landmarkData[0].locationCoordinate)
     }

@@ -8,8 +8,7 @@
 
 import SwiftUI
 
-struct LandmarkDetail : View {
-    
+struct LandmarkDetail: View {
     @EnvironmentObject var userData: UserData
     var landmark: Landmark
     
@@ -20,8 +19,8 @@ struct LandmarkDetail : View {
     var body: some View {
         VStack {
             MapView(coordinate: landmark.locationCoordinate)
+                .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
-//            .edgesIgnoringSafeArea(.top)
             
             CircleImage(image: landmark.image(forSize: 250))
                 .offset(x: 0, y: -130)
@@ -29,13 +28,15 @@ struct LandmarkDetail : View {
             
             VStack(alignment: .leading) {
                 HStack {
-                    Text(landmark.name)
+                    Text(verbatim: landmark.name)
                         .font(.title)
                     
                     Button(action: {
-                        self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
+                        self.userData.landmarks[self.landmarkIndex]
+                            .isFavorite.toggle()
                     }) {
-                        if self.userData.landmarks[self.landmarkIndex].isFavorite {
+                        if self.userData.landmarks[self.landmarkIndex]
+                            .isFavorite {
                             Image(systemName: "star.fill")
                                 .foregroundColor(Color.yellow)
                         } else {
@@ -46,25 +47,26 @@ struct LandmarkDetail : View {
                 }
                 
                 HStack(alignment: .top) {
-                    Text(landmark.park)
+                    Text(verbatim: landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text(landmark.state)
+                    Text(verbatim: landmark.state)
                         .font(.subheadline)
+                    }
                 }
-            }
-            .padding()
+                .padding()
             
-            Spacer()
+                Spacer()
         }
-            .navigationBarTitle(Text(verbatim: landmark.name), displayMode: .inline)
     }
 }
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct LandmarkDetail_Preview: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail(landmark: landmarkData[0])
+        let userData = UserData()
+        return LandmarkDetail(landmark: userData.landmarks[0])
+            .environmentObject(userData)
     }
 }
 #endif
