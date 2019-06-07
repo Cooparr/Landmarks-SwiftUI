@@ -6,41 +6,37 @@
 //  Copyright © 2019 Alexander Cooper. All rights reserved.
 //
 
+
 import SwiftUI
 
 struct LandmarkList: View {
-    @EnvironmentObject private var userData: UserData
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
-        NavigationView {
-            List {
-                Toggle(isOn: $userData.showFavoritesOnly) {
-                    Text("Show Favorites Only")
-                }
-                
-                ForEach(userData.landmarks) { landmark in
-                    if !self.userData.showFavoritesOnly || landmark.isFavorite {
-                        NavigationButton(
-                        destination: LandmarkDetail(landmark: landmark)) {
-                            LandmarkRow(landmark: landmark)
-                        }
+        
+        List {
+            Toggle(isOn: $userData.showFavoritesOnly) {
+                Text("Favorites only")
+            }
+            
+            ForEach(userData.landmarks) { landmark in
+                if !self.userData.showFavoritesOnly || landmark.isFavorite {
+                    NavigationButton(destination: LandmarkDetail(landmark: landmark)) {
+                        LandmarkRow(landmark: landmark)
                     }
                 }
             }
-            .navigationBarTitle(Text("Landmarks"), displayMode: .large)
-        }
+            }
+            .navigationBarTitle(Text("Landmarks"))
+        
     }
 }
 
-#if DEBUG
-struct LandmarksList_Previews: PreviewProvider {
+struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE", "iPhone 8","iPhone XS Max"].identified(by: \.self)) { deviceName in
+        NavigationView {
             LandmarkList()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)
-            }
-            .environmentObject(UserData())
+                .environmentObject(UserData())
+        }
     }
 }
-#endif

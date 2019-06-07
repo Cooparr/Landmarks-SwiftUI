@@ -36,8 +36,21 @@ struct CategoryHome: View {
                     
                 }
                 .listRowInsets(EdgeInsets())
+                
+                NavigationButton(destination: LandmarkList()) {
+                    Text("See All")
+                }
             }
             .navigationBarTitle(Text("Featured"))
+            .navigationBarItems(trailing:
+                PresentationButton(
+                    Image(systemName: "person.crop.circle")
+                    .imageScale(.large)
+                    .padding()
+                    .accessibility(label: Text("User Profile")),
+                    destination: Text("User Profile")
+                )
+            )
         }
     }
 }
