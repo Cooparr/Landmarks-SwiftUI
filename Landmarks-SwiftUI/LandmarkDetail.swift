@@ -52,11 +52,11 @@ struct LandmarkDetail: View {
                     Spacer()
                     Text(verbatim: landmark.state)
                         .font(.subheadline)
-                    }
                 }
-                .padding()
+            }
+            .padding()
             
-                Spacer()
+            Spacer()
         }
     }
 }
