@@ -38,7 +38,6 @@ struct CategoryRow : View {
     }
 }
 
-
 struct CategoryItem : View {
     var landmark: Landmark
     var body: some View {
@@ -49,13 +48,12 @@ struct CategoryItem : View {
                 .cornerRadius(5)
             
             Text(landmark.name)
-                    .font(.caption)
+                .font(.caption)
                 .color(.primary)
-        }.padding(.leading, 15)
-        
+        }
+        .padding(.leading, 15)
     }
 }
-
 
 #if DEBUG
 struct CategoryRow_Previews : PreviewProvider {

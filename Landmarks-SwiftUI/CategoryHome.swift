@@ -8,7 +8,6 @@
 
 import SwiftUI
 
-
 struct CategoryHome: View {
     var categories: [String: [Landmark]] {
         .init(
@@ -24,7 +23,6 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                
                 FeaturedLandmarks(landmarks: featured)
                     .scaledToFill()
                     .frame(height: 200)
@@ -33,7 +31,6 @@ struct CategoryHome: View {
                 
                 ForEach(categories.keys.sorted().identified(by: \.self)) { key in
                     CategoryRow(categoryName: key, items: self.categories[key]!)
-                    
                 }
                 .listRowInsets(EdgeInsets())
                 
@@ -55,7 +52,6 @@ struct CategoryHome: View {
     }
 }
 
-
 struct FeaturedLandmarks : View {
     var landmarks: [Landmark]
     
@@ -63,7 +59,6 @@ struct FeaturedLandmarks : View {
         landmarks[0].image(forSize: 250).resizable()
     }
 }
-
 
 #if DEBUG
 struct Home_Previews : PreviewProvider {

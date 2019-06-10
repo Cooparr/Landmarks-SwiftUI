@@ -73,4 +73,3 @@ struct HikeGraph_Previews: PreviewProvider {
     }
 }
 #endif
-
