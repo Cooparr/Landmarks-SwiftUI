@@ -8,20 +8,34 @@
 
 import SwiftUI
 
-struct ProfileHost : View {
+struct ProfileHost: View {
     
+    @Environment(\.editMode) var mode
     @State var profile = Profile.default
+    @State var draftProfile = Profile.default
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            ProfileSummary(profile: self.profile)
+            
+            HStack {
+                Spacer()
+                
+                EditButton()
+            }
+            
+            if self.mode?.value == .inactive {
+                ProfileSummary(profile: profile)
+            } else {
+                ProfileEditor(profile: $draftProfile)
+            }
         }
         .padding()
     }
+    
 }
 
 #if DEBUG
-struct ProfileHost_Previews : PreviewProvider {
+struct ProfileHost_Previews: PreviewProvider {
     static var previews: some View {
         ProfileHost()
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E10616D22AF0D470083A19A /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E10616C22AF0D470083A19A /* ProfileEditor.swift */; };
 		1E11C44922A81562004764E9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E11C44822A81562004764E9 /* Data.swift */; };
 		1E11C44B22A8157D004764E9 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E11C44A22A8157D004764E9 /* Landmark.swift */; };
 		1E11C45222A81612004764E9 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E11C45122A81612004764E9 /* LICENSE.txt */; };
@@ -54,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E10616C22AF0D470083A19A /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		1E11C44822A81562004764E9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1E11C44A22A8157D004764E9 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		1E11C45122A81612004764E9 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				1EA50B0522AF07BA00B4532F /* ProfileHost.swift */,
 				1EA50B0722AF084A00B4532F /* ProfileSummary.swift */,
+				1E10616C22AF0D470083A19A /* ProfileEditor.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				1EA50B0822AF084A00B4532F /* ProfileSummary.swift in Sources */,
 				1E4D28F822A801B5001FBB25 /* LandmarkDetail.swift in Sources */,
 				1E406B4222AA8F7100B68BAD /* HikeDetail.swift in Sources */,
+				1E10616D22AF0D470083A19A /* ProfileEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
