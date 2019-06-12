@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E04256E22B1190B0046389F /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E04256D22B1190B0046389F /* PageControl.swift */; };
 		1E10616D22AF0D470083A19A /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E10616C22AF0D470083A19A /* ProfileEditor.swift */; };
 		1E11C44922A81562004764E9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E11C44822A81562004764E9 /* Data.swift */; };
 		1E11C44B22A8157D004764E9 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E11C44A22A8157D004764E9 /* Landmark.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E04256D22B1190B0046389F /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		1E10616C22AF0D470083A19A /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		1E11C44822A81562004764E9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1E11C44A22A8157D004764E9 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				1E4D28FB22A801B7001FBB25 /* Preview Content */,
 				1E3EDB5022B10FEB00BCADBD /* PageViewController.swift */,
 				1E3EDB5222B1117900BCADBD /* PageView.swift */,
+				1E04256D22B1190B0046389F /* PageControl.swift */,
 			);
 			path = "Landmarks-SwiftUI";
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				1E767E7122A941D400C54281 /* UserData.swift in Sources */,
 				1E3EDB5322B1117900BCADBD /* PageView.swift in Sources */,
 				1EA50B0822AF084A00B4532F /* ProfileSummary.swift in Sources */,
+				1E04256E22B1190B0046389F /* PageControl.swift in Sources */,
 				1E4D28F822A801B5001FBB25 /* LandmarkDetail.swift in Sources */,
 				1E406B4222AA8F7100B68BAD /* HikeDetail.swift in Sources */,
 				1E10616D22AF0D470083A19A /* ProfileEditor.swift in Sources */,
